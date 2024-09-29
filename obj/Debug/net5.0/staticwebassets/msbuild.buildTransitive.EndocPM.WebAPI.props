@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EndocPM.WebAPI.props" />
+</Project>

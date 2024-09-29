@@ -1,0 +1,145 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>b52dcc53-7730-4588-a92c-6e69f7f5bac7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\E-Prescription\**" />
+    <Compile Remove="wwwroot\Documents\Provider\1\**" />
+    <Content Remove="Entities\E-Prescription\**" />
+    <Content Remove="wwwroot\Documents\Provider\1\**" />
+    <EmbeddedResource Remove="Entities\E-Prescription\**" />
+    <EmbeddedResource Remove="wwwroot\Documents\Provider\1\**" />
+    <None Remove="Entities\E-Prescription\**" />
+    <None Remove="wwwroot\Documents\Provider\1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="DAL\Services\h1d3y0t0.12v~" />
+    <None Remove="Data\Mappings\Appointment\k4dr2lyk.h2b~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net5.0\appsettings.json" />
+    <Content Include="bin\Debug\net5.0\EndocPM.WebAPI.deps.json" />
+    <Content Include="bin\Debug\net5.0\EndocPM.WebAPI.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\net5.0\EndocPM.WebAPI.runtimeconfig.json" />
+    <Content Include="obj\Debug\net5.0\EndocPM.WebAPI.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\EndocPM.WebAPI.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="MailKit" Version="3.4.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
+    <PackageReference Include="MimeKit" Version="3.4.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+    <PackageReference Include="System.Text.Json" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Context\" />
+    <Folder Include="Data\Mappings\ELab\" />
+    <Folder Include="ViewModel\Claim\" />
+    <Folder Include="ViewModel\SetUp\Providers\" />
+    <Folder Include="wwwroot\Documents\kill\1\" />
+    <Folder Include="wwwroot\Documents\Mans\1\" />
+    <Folder Include="wwwroot\Documents\Mans\2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\EndocPM.WebAPI.dll" />
+    <None Include="bin\Debug\net5.0\EndocPM.WebAPI.exe" />
+    <None Include="bin\Debug\net5.0\EndocPM.WebAPI.pdb" />
+    <None Include="bin\Debug\net5.0\EntityFramework.dll" />
+    <None Include="bin\Debug\net5.0\EntityFramework.SqlServer.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\net5.0\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Debug\net5.0\System.CodeDom.dll" />
+    <None Include="bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net5.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net5.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net5.0\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Debug\net5.0\System.Text.Json.dll" />
+    <None Include="EndocPM.WebAPI.sln" />
+    <None Include="obj\Debug\net5.0\apphost.exe" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.assets.cache" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.csproj.CopyComplete" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.dll" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net5.0\EndocPM.WebAPI.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\net5.0\refint\EndocPM.WebAPI.dll" />
+    <None Include="obj\Debug\net5.0\ref\EndocPM.WebAPI.dll" />
+    <None Include="obj\Debug\net5.0\staticwebassets\EndocPM.WebAPI.StaticWebAssets.Manifest.cache" />
+    <None Include="obj\Debug\net5.0\staticwebassets\EndocPM.WebAPI.StaticWebAssets.Pack.cache" />
+    <None Include="obj\EndocPM.WebAPI.csproj.nuget.g.props" />
+    <None Include="obj\EndocPM.WebAPI.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+</Project>
